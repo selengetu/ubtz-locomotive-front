@@ -231,76 +231,12 @@ const Navs = () => {
         </CCol>
       </CRow>
 
-      <CRow>
+     
+     
 
-        <CCol xs="6">
-          <CCard>
-            <CCardHeader>
-              Navs
-              <small> tabs with dropdowns</small>
-            </CCardHeader>
-            <CCardBody>
-              <CNav variant="tabs">
-                <CNavItem>
-                  <CNavLink active>Link</CNavLink>
-                </CNavItem>
-                <CDropdown inNav>
-                  <CDropdownToggle caret>
-                    Dropdown
-                  </CDropdownToggle>
-                  <CDropdownMenu>
-                    <CDropdownItem>Action</CDropdownItem>
-                    <CDropdownItem>Another action</CDropdownItem>
-                    <CDropdownItem>Something else here</CDropdownItem>
-                    <CDropdownItem divider />
-                    <CDropdownItem>Separated link</CDropdownItem>
-                  </CDropdownMenu>
-                </CDropdown>
-                <CNavItem>
-                  <CNavLink>Link</CNavLink>
-                </CNavItem>
-                <CNavItem>
-                  <CNavLink disabled>Disabled</CNavLink>
-                </CNavItem>
-              </CNav>
-            </CCardBody>
-          </CCard>
-        </CCol>
 
-        <CCol xs="6">
-          <CCard>
-            <CCardHeader>
-              Navs
-              <small> pills with dropdowns</small>
-            </CCardHeader>
-            <CCardBody>
-              <CNav variant="pills">
-                <CNavItem>
-                  <CNavLink active>Link</CNavLink>
-                </CNavItem>
-                <CDropdown inNav>
-                  <CDropdownToggle caret>
-                    Dropdown
-                  </CDropdownToggle>
-                  <CDropdownMenu>
-                    <CDropdownItem>Action</CDropdownItem>
-                    <CDropdownItem>Another action</CDropdownItem>
-                    <CDropdownItem>Something else here</CDropdownItem>
-                    <CDropdownItem divider />
-                    <CDropdownItem>Separated link</CDropdownItem>
-                  </CDropdownMenu>
-                </CDropdown>
-                <CNavItem>
-                  <CNavLink>Link</CNavLink>
-                </CNavItem>
-                <CNavItem>
-                  <CNavLink disabled>Disabled</CNavLink>
-                </CNavItem>
-              </CNav>
-            </CCardBody>
-          </CCard>
-        </CCol>
-      </CRow>
+
+     
     </>
   )
 }
