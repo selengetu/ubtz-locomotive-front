@@ -1,9 +1,7 @@
 import React, { lazy, useState } from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import {
-    Tab, 
-    Tabs,
-TabList,
-  TabPanel,
+  
   CCard,
   CCardBody,
   CCardHeader,
@@ -42,6 +40,7 @@ TabList,
   CNavLink
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
+import 'react-tabs/style/react-tabs.css'
 
 import MainChartExample from '../charts/MainChartExample.js'
 
@@ -61,79 +60,25 @@ const Dashboard = () => {
     <>
       <CRow>
 
-<CCol xs="6">
-  <CCard>
-    <CCardHeader>
-      Navs
-      <small> tabs with dropdowns</small>
-    </CCardHeader>
-    <CCardBody>
-      <CNav variant="tabs">
-        <CNavItem>
-          <CNavLink active>Link</CNavLink>
-        </CNavItem>
-        <CDropdown inNav>
-          <CDropdownToggle caret>
-            Dropdown
-          </CDropdownToggle>
-          <CDropdownMenu>
-            <CDropdownItem>Action</CDropdownItem>
-            <CDropdownItem>Another action</CDropdownItem>
-            <CDropdownItem>Something else here</CDropdownItem>
-            <CDropdownItem divider />
-            <CDropdownItem>Separated link</CDropdownItem>
-          </CDropdownMenu>
-        </CDropdown>
-        <CNavItem>
-          <CNavLink>Link</CNavLink>
-        </CNavItem>
-        <CNavItem>
-          <CNavLink disabled>Disabled</CNavLink>
-        </CNavItem>
-      </CNav>
-    </CCardBody>
-  </CCard>
-</CCol>
 
-<CCol xs="6">
-  <CCard>
-    <CCardHeader>
-      Navs
-      <small> pills with dropdowns</small>
-    </CCardHeader>
-    <CCardBody>
-      <CNav variant="pills">
-        <CNavItem>
-          <CNavLink active>Link</CNavLink>
-        </CNavItem>
-        <CDropdown inNav>
-          <CDropdownToggle caret>
-            Dropdown
-          </CDropdownToggle>
-          <CDropdownMenu>
-            <CDropdownItem>Action</CDropdownItem>
-            <CDropdownItem>Another action</CDropdownItem>
-            <CDropdownItem>Something else here</CDropdownItem>
-            <CDropdownItem divider />
-            <CDropdownItem>Separated link</CDropdownItem>
-          </CDropdownMenu>
-        </CDropdown>
-        <CNavItem>
-          <CNavLink>Link</CNavLink>
-        </CNavItem>
-        <CNavItem>
-          <CNavLink disabled>Disabled</CNavLink>
-        </CNavItem>
-      </CNav>
-    </CCardBody>
-  </CCard>
-</CCol>
-</CRow>
-      
+<CCol xs="12">
+<Tabs>
+    <TabList>
+      <Tab>
+      Замнал
+      </Tab>
+      <Tab>Зүтгүүр</Tab>
+      <Tab>Техник аялал</Tab>
+      <Tab>Зэхэлт</Tab>
+      <Tab>Хос зүтгүүр</Tab>
+      <Tab>Явсан өртөө</Tab>
+      <Tab>ГТ-ийн бүрэлдэхүүн</Tab>
+      <Tab>Бэлтгэлээр явсан</Tab>
+    </TabList>
 
-      <CRow>
-        <CCol>
-          <CCard>
+    <TabPanel>
+      <h2>Замнал</h2>
+      <CCard>
             <CCardHeader>
             <CRow className="align-items-center">
             <CCol  col="6" sm="4" md="10" className="mb-3 mb-xl-0">
@@ -182,8 +127,229 @@ const Dashboard = () => {
 
             </CCardBody>
           </CCard>
-        </CCol>
-      </CRow>
+    </TabPanel>
+    <TabPanel>
+      <h2>Зүтгүүр</h2>
+      <CCard>
+            <CCardHeader>
+           
+            
+            </CCardHeader>
+            <CCardBody>
+            
+
+              <table className="table table-hover table-responsive table-outline mb-0  d-sm-table">
+                <thead>
+                  <tr>
+                    <th>Маршрут</th>
+                    <th>Сери</th>
+                    <th>Серийн нэр</th>
+                    <th>ИТ-ний дугаар</th>
+                    <th>Секц</th>
+                    <th>Зүтгүүр авсан цаг</th>
+                    <th>Депогоос гарсан цаг</th>
+                    <th>Депод орсон цаг</th>
+                    <th>Зүтгүүр өгсөн цаг</th>
+                    <th>Нөхөлт</th>
+                    <th>Депо код</th>
+                    <th>Маршрут</th>
+                    <th>Авсан түлш А</th>
+                    <th>Авсан түлш Б</th>
+                    <th>Өгсөн түлш А</th>
+                    <th>Өгсөн түлш Б</th>
+                    <th>Депо</th>
+                    <th>Маршрут</th>
+                    <th>Анхаарамж</th>
+               
+                  </tr>
+                </thead>
+                <tbody>
+               
+                </tbody>
+              </table>
+
+            </CCardBody>
+          </CCard>
+    </TabPanel>
+    <TabPanel>
+      <h2>Техник аялал</h2>
+      <CCard>
+            <CCardHeader>
+           
+            
+            </CCardHeader>
+            <CCardBody>
+            
+
+              <table className="table table-hover table-responsive table-outline mb-0  d-sm-table">
+                <thead>
+                  <tr>
+                    <th>Маршрут</th>
+                    <th>То-1</th>
+                    <th>Цикл цэвэрлэгээ</th>
+                    <th>Лац, ломбо</th>
+                    <th>Рессивер тос</th>
+                    <th>Сэлгээ</th>
+                    <th>Маршрут зөрчил</th>
+                    <th>Түлш тооцох</th>
+                    <th>Шагналын хувь</th>
+                   
+               
+                  </tr>
+                </thead>
+                <tbody>
+               
+                </tbody>
+              </table>
+
+            </CCardBody>
+          </CCard>
+    </TabPanel>
+    <TabPanel>
+      <h2>Зэхэлт</h2>
+      <CCard>
+            <CCardHeader>
+           
+            
+            </CCardHeader>
+            <CCardBody>
+            
+
+              <table className="table table-hover table-responsive table-outline mb-0  d-sm-table">
+                <thead>
+                  <tr>
+                    <th>Маршрут</th>
+                    <th>Төрөл</th>
+                    <th>Зэхсэн түлш А</th>
+                    <th>Зэхсэн түлш Б</th>
+                    <th>Складын №</th>
+                    <th>Агуулахын нэр</th>
+                    <th>Түгээгч</th>
+                    <th>Шаардах хуудас</th>
+                    <th>Зэхэж эхэлсэн цаг</th>
+                    <th>Зэхэж дууссан цаг</th>
+                    <th>Дизелийн тос</th>
+                    <th>РЧо-ын тос</th>
+                    <th>Шахуургын тос</th>
+                    <th>Дизелийн тос</th>
+                  </tr>
+                </thead>
+                <tbody>
+               
+                </tbody>
+              </table>
+
+            </CCardBody>
+          </CCard>
+    </TabPanel>
+    <TabPanel>
+      <h2>Хос зүтгүүрийн мэдээлэл</h2>
+      <CCard>
+            <CCardHeader>
+           
+            
+            </CCardHeader>
+            <CCardBody>
+            
+
+              <table className="table table-hover table-responsive table-outline mb-0  d-sm-table">
+                <thead>
+                  <tr>
+                    <th>Маршрут</th>
+                    <th>Хосын дугаар</th>
+                    <th>Хос явалт</th>
+                    <th>Сери</th>
+                    <th>Серийн нэр</th>
+                    <th>Ит-ний дугаар</th>
+                    <th>Секц</th>
+                    <th>Явсан өртөө</th>
+                    <th>Явсан өртөөний нэр</th>
+                    <th>Очсон өртөө</th>
+                    <th>Очсон өртөөний нэр</th>
+                    <th>Депо</th>
+                    <th>Маршрут</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+               
+                </tbody>
+              </table>
+
+            </CCardBody>
+          </CCard>
+    </TabPanel>
+    <TabPanel>
+      <h2>Явсан, очсон өртөөний мэдээлэл</h2>
+      <CCard>
+            <CCardHeader>
+           
+            
+            </CCardHeader>
+            <CCardBody>
+            
+
+              <table className="table table-hover table-responsive table-outline mb-0  d-sm-table">
+                <thead>
+                  <tr>
+                    <th>Маршрут</th>
+                    <th>Ажлын төрөл</th>
+                    <th>Салгалтын дугаар</th>
+                    <th>Салгалт дахь дугаар</th>
+                    <th>Өртөөний код</th>
+                    <th>Өртөөний нэр</th>
+                    <th>Явсан цаг</th>
+                    <th>Очсон цаг өртөө</th>
+                    <th>ГТ-ын сэлгээ</th>
+                    <th>Төлөв</th>
+        
+                  </tr>
+                </thead>
+                <tbody>
+               
+                </tbody>
+              </table>
+
+            </CCardBody>
+          </CCard>
+    </TabPanel>
+    <TabPanel>
+      <h2>ГТ-ний бүрэлдэхүүний мэдээлэл</h2>
+      <CCard>
+            <CCardHeader>
+           
+            
+            </CCardHeader>
+            <CCardBody>
+            
+
+              <table className="table table-hover table-responsive table-outline mb-0  d-sm-table">
+                <thead>
+                  <tr>
+                    <th>Маршрут</th>
+                    <th>Ажлын төрөл</th>
+                    <th>Салгалтын дугаар</th>
+                    <th>Салгалт дахь дугаар</th>
+                    <th>Өртөөний код</th>
+                    <th>Өртөөний нэр</th>
+                    <th>Явсан цаг</th>
+                    <th>Очсон цаг өртөө</th>
+                    <th>ГТ-ын сэлгээ</th>
+                    <th>Төлөв</th>
+        
+                  </tr>
+                </thead>
+                <tbody>
+               
+                </tbody>
+              </table>
+
+            </CCardBody>
+          </CCard>
+    </TabPanel>
+  </Tabs>
+</CCol>
+</CRow>
       
       <CModal 
               show={large} 
