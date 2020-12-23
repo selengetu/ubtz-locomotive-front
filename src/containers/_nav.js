@@ -114,7 +114,7 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Хоногийн шаардах',
-        to: '/base/tables',
+        to: '/shaardah',
       },
       {
         _tag: 'CSidebarNavItem',
@@ -124,12 +124,12 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Шалтгаантай цаг',
-        to: '/buttons/button-dropdowns',
+        to: '/reason',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Хийснээрх сэлгээ',
-        to: '/buttons/brand-buttons',
+        to: '/selgee',
       },
       {
         _tag: 'CSidebarNavItem',

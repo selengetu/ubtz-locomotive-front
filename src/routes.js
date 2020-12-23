@@ -38,9 +38,15 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
 const Marshrut = React.lazy(() => import('./views/marshrut/Marshrut'));
+const Shaardah = React.lazy(() => import('./views/marshrut/Shaardah'));
+const Reason = React.lazy(() => import('./views/marshrut/Reason'));
+const Selgee = React.lazy(() => import('./views/marshrut/Selgee'));
 const routes = [
   { path: '/', exact: true, name: 'Нүүр хуудас' },
   { path: '/marshrut', name: 'Маршрут', component: Marshrut  },
+  { path: '/reason', name: 'Маршрут', component: Reason  },
+  { path: '/shaardah', name: 'Хоногийн шаардах', component: Shaardah  },
+  { path: '/selgee', name: 'Сэлгээ', component: Selgee  },
   { path: '/dashboard', name: 'Нүүр хуудас', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },

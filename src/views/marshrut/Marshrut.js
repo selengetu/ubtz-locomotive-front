@@ -347,6 +347,40 @@ const Dashboard = () => {
             </CCardBody>
           </CCard>
     </TabPanel>
+    <TabPanel>
+      <h2>Бригадын бэлтгэлээр явсан мэдээлэл</h2>
+      <CCard>
+            <CCardHeader>
+           
+            
+            </CCardHeader>
+            <CCardBody>
+            
+
+              <table className="table table-hover table-responsive table-outline mb-0  d-sm-table">
+                <thead>
+                  <tr>
+                    <th>Маршрут</th>
+                    <th>Гт-ний дугаар</th>
+                    <th>Явах өртөө</th>
+                    <th>Явах өртөөний нэр</th>
+                    <th>Явах цаг</th>
+                    <th>Очих өртөө</th>
+                    <th>Очих өртөөний нэр</th>
+                    <th>Очих цаг</th>
+                    <th>Тушаалын дугаар</th>
+                    <th>Албан тушаал</th>
+                    <th>Шалтгаан</th>
+                  </tr>
+                </thead>
+                <tbody>
+               
+                </tbody>
+              </table>
+
+            </CCardBody>
+          </CCard>
+    </TabPanel>
   </Tabs>
 </CCol>
 </CRow>
