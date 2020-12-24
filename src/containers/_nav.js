@@ -119,7 +119,7 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Засварын бүртгэл',
-        to: '/notifications/modals',
+        to: '',
       },
       {
         _tag: 'CSidebarNavItem',
@@ -134,7 +134,7 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Шагналт цалин',
-        to: '/buttons/button-groups',
+        to: '/shagnal',
       }
     ],
   },
