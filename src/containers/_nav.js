@@ -32,12 +32,12 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Зүтгүүр',
-        to: '/buttons/button-groups',
+        to: '/loc',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Өртөө',
-        to: '/buttons/button-dropdowns',
+        to: '/station',
       },
       {
         _tag: 'CSidebarNavItem',

@@ -44,6 +44,8 @@ const Selgee = React.lazy(() => import('./views/marshrut/Selgee'));
 const Shagnal = React.lazy(() => import('./views/marshrut/Shagnal'));
 const Depo = React.lazy(() => import('./views/set/Depo'));
 const PUsers = React.lazy(() => import('./views/set/User'));
+const Loc = React.lazy(() => import('./views/set/Loc'));
+const Station = React.lazy(() => import('./views/set/Station'));
 const routes = [
   { path: '/', exact: true, name: 'Нүүр хуудас' },
   { path: '/marshrut', name: 'Маршрут', component: Marshrut  },
@@ -53,6 +55,8 @@ const routes = [
   { path: '/shagnal', name: 'Шагналт цалин', component: Shagnal  },
   { path: '/depo', name: 'Депо', component: Depo  },
   { path: '/user', name: 'Хэрэглэгч', component: PUsers  },
+  { path: '/loc', name: 'Зүтгүүр', component: Loc  },
+  { path: '/station', name: 'Өртөө', component: Station  },
   { path: '/dashboard', name: 'Нүүр хуудас', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
