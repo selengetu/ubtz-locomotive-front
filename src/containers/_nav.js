@@ -22,12 +22,12 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Депо',
-        to: '/base/forms',
+        to: '/depo',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Хэрэглэгч',
-        to: '/base/navs',
+        to: '/user',
       },
       {
         _tag: 'CSidebarNavItem',
