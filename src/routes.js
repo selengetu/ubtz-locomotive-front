@@ -46,6 +46,7 @@ const Depo = React.lazy(() => import('./views/set/Depo'));
 const PUsers = React.lazy(() => import('./views/set/User'));
 const Loc = React.lazy(() => import('./views/set/Loc'));
 const Station = React.lazy(() => import('./views/set/Station'));
+const Worktype = React.lazy(() => import('./views/set/Worktype'));
 const routes = [
   { path: '/', exact: true, name: 'Нүүр хуудас' },
   { path: '/marshrut', name: 'Маршрут', component: Marshrut  },
@@ -57,6 +58,7 @@ const routes = [
   { path: '/user', name: 'Хэрэглэгч', component: PUsers  },
   { path: '/loc', name: 'Зүтгүүр', component: Loc  },
   { path: '/station', name: 'Өртөө', component: Station  },
+  { path: '/worktype', name: 'Ажлын төрөл', component: Worktype  },
   { path: '/dashboard', name: 'Нүүр хуудас', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },

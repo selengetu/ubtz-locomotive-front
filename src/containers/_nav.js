@@ -42,7 +42,7 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Ажлын төрөл',
-        to: '/buttons/brand-buttons',
+        to: '/worktype',
       },
       {
         _tag: 'CSidebarNavItem',
@@ -180,27 +180,27 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Депо',
-        to: '/buttons/buttons',
+        to: '/depo',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Хэрэглэгч',
-        to: '/buttons/brand-buttons',
+        to: '/user',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Зүтгүүр',
-        to: '/buttons/button-groups',
+        to: '/loc',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Өртөө',
-        to: '/buttons/button-dropdowns',
+        to: '/station',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Ажлын төрөл',
-        to: '/buttons/brand-buttons',
+        to: '/worktype',
       },
       {
         _tag: 'CSidebarNavItem',
@@ -266,7 +266,7 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Маршрут',
-        to: '/buttons/buttons',
+        to: '/mashrut',
       },
       {
         _tag: 'CSidebarNavItem',
