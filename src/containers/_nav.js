@@ -47,12 +47,12 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Зүтгүүрийн сери',
-        to: '/buttons/button-groups',
+        to: '/zutseri',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Зүтгүүрийн салгалт',
-        to: '/buttons/button-dropdowns',
+        to: '/zutsalgalt',
       }
     ],
   },
