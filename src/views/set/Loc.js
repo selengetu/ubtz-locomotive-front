@@ -40,7 +40,7 @@ const Dashboard = () => {
     if (data.lenght === 0) {
       return (
         <tr>
-          <td colspan="7">Бүртгэлтэй Хэрэглэгч байхгүй байна</td>
+          <td colspan="7">Бүртгэлтэй зүтгүүр байхгүй байна</td>
         </tr>
       );
     }

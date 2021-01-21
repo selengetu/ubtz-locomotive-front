@@ -8,4 +8,6 @@ export default {
   getDepoType: () => axios.get(`${BASE_API_URL}get-depo-type`),
   getLoc: () => axios.get(`${BASE_API_URL}get-loc`),
   getStation: () => axios.get(`${BASE_API_URL}get-station`),
+  getWorkType: () => axios.get(`${BASE_API_URL}get-worktype`),
+  getLocseri: () => axios.get(`${BASE_API_URL}get-locseri`),
 };
