@@ -72,6 +72,8 @@ const ZutSeri = React.lazy(() => import("./views/set/Zutseri"));
 const ZutSalgalt = React.lazy(() => import("./views/set/Zutsal"));
 const Line = React.lazy(() => import("./views/work/Line"));
 
+const Pnorm = React.lazy(() => import("./views/norm/Pnorm"));
+const Fnorm = React.lazy(() => import("./views/norm/Fnorm"));
 const routes = [
   {
     path: "/",
@@ -142,6 +144,16 @@ const routes = [
     path: "/line",
     name: "Үйлчлэх мөр",
     component: Line,
+  },
+  {
+    path: "/fnorm",
+    name: "Ачааны норм",
+    component: Fnorm,
+  },
+  {
+    path: "/pnorm",
+    name: "Суудлын норм",
+    component: Pnorm,
   },
   {
     path: "/dashboard",

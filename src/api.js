@@ -10,4 +10,8 @@ export default {
   getStation: () => axios.get(`${BASE_API_URL}get-station`),
   getWorkType: () => axios.get(`${BASE_API_URL}get-worktype`),
   getLocseri: () => axios.get(`${BASE_API_URL}get-locseri`),
+  getMarsh: () => axios.get(`${BASE_API_URL}get-marsh`),
+  getLocsal: () => axios.get(`${BASE_API_URL}get-locsal`),
+  getPnorm: () => axios.get(`${BASE_API_URL}get-pnorm`),
+  getFnorm: () => axios.get(`${BASE_API_URL}get-fnorm`),
 };
