@@ -24,7 +24,7 @@ const Dashboard = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    api.getPnorm().then((res) => {
+    api.getFspeed().then((res) => {
       setData(res.data);
     });
   });
@@ -33,26 +33,34 @@ const Dashboard = () => {
     if (!data) {
       return (
         <tr>
-          <td colspan="7">Уншиж байна...</td>
+          <td colspan="15">Уншиж байна...</td>
         </tr>
       );
     }
     if (data.lenght === 0) {
       return (
         <tr>
-          <td colspan="7">Бүртгэлтэй бичлэг байхгүй байна</td>
+          <td colspan="15">Бүртгэлтэй бичлэг байхгүй байна</td>
         </tr>
       );
     }
     return data.map((row) => (
       <tr>
         <td>{row.MOVETYPE}</td>
-        <td>{row.PARTCODE}</td>
-        <td>{row.MINLIMIT}</td>
-        <td>{row.MAXLIMIT}</td>
         <td>{row.SERICODE}</td>
-        <td>{row.EVENNORM}</td>
-        <td>{row.ODDNORM}</td>
+        <td>{row.PARTCODE}</td>
+
+        <td>{row.ODDLIMIT}</td>
+        <td>{row.ODDDIFFER}</td>
+        <td>{row.ODDSPEED60}</td>
+        <td>{row.ODDSPEEDNORM}</td>
+        <td>{row.PARTLEGTH}</td>
+        <td>{row.PARTBEGNAME}</td>
+        <td>{row.PARTENDNAME}</td>
+        <td>{row.EVENLIMIT}</td>
+        <td>{row.EVENDIFFER}</td>
+        <td>{row.EVENSPEED60}</td>
+        <td>{row.EVENSPEEDNORM}</td>
       </tr>
     ));
   };
@@ -65,7 +73,7 @@ const Dashboard = () => {
             <CCardHeader>
               <CRow className="align-items-center">
                 <CCol col="6" sm="4" md="10" className="mb-3 mb-xl-0">
-                  Суудлын норм
+                  Ачааны ход
                 </CCol>
               </CRow>
             </CCardHeader>
@@ -74,12 +82,20 @@ const Dashboard = () => {
                 <thead>
                   <tr>
                     <th>Хөдөлгөөн</th>
-                    <th>Мөрийн код</th>
-                    <th>Доод хязгаар</th>
-                    <th>Дээд хязгаар</th>
                     <th>Сери</th>
-                    <th>Тэгш норм</th>
-                    <th>Сондгой норм</th>
+                    <th>Мөрийн код </th>
+                    <th>Хязгаарын жин</th>
+                    <th>Дифф жин</th>
+                    <th>60 км/цаг</th>
+                    <th>6000тн</th>
+                    <th>Тогтоосон норм</th>
+                    <th>Эхлэх</th>
+                    <th>Төгсөх</th>
+                    <th>Нормт хугацаа</th>
+                    <th>Хязгаарын жин</th>
+                    <th>Дифф жин</th>
+                    <th>60 км/цаг</th>
+                    <th>6000тн</th>
                   </tr>
                 </thead>
                 <tbody>{renderData()}</tbody>

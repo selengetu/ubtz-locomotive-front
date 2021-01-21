@@ -14,4 +14,6 @@ export default {
   getLocsal: () => axios.get(`${BASE_API_URL}get-locsal`),
   getPnorm: () => axios.get(`${BASE_API_URL}get-pnorm`),
   getFnorm: () => axios.get(`${BASE_API_URL}get-fnorm`),
+  getSnorm: () => axios.get(`${BASE_API_URL}get-snorm`),
+  getFspeed: () => axios.get(`${BASE_API_URL}get-fspeed`),
 };

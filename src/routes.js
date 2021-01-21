@@ -74,6 +74,8 @@ const Line = React.lazy(() => import("./views/work/Line"));
 
 const Pnorm = React.lazy(() => import("./views/norm/Pnorm"));
 const Fnorm = React.lazy(() => import("./views/norm/Fnorm"));
+const Snorm = React.lazy(() => import("./views/norm/Snorm"));
+const Fspeed = React.lazy(() => import("./views/norm/Fspeed"));
 const routes = [
   {
     path: "/",
@@ -154,6 +156,16 @@ const routes = [
     path: "/pnorm",
     name: "Суудлын норм",
     component: Pnorm,
+  },
+  {
+    path: "/snorm",
+    name: "Сэлгээний норм",
+    component: Snorm,
+  },
+  {
+    path: "/fspeed",
+    name: "Ачааны ход",
+    component: Fspeed,
   },
   {
     path: "/dashboard",
