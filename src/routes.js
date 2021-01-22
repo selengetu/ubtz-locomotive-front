@@ -70,8 +70,7 @@ const Station = React.lazy(() => import("./views/set/Station"));
 const Worktype = React.lazy(() => import("./views/set/Worktype"));
 const ZutSeri = React.lazy(() => import("./views/set/Zutseri"));
 const ZutSalgalt = React.lazy(() => import("./views/set/Zutsal"));
-const Line = React.lazy(() => import("./views/work/Line"));
-
+const Waypart = React.lazy(() => import("./views/norm/WayPart"));
 const Pnorm = React.lazy(() => import("./views/norm/Pnorm"));
 const Fnorm = React.lazy(() => import("./views/norm/Fnorm"));
 const Snorm = React.lazy(() => import("./views/norm/Snorm"));
@@ -143,9 +142,9 @@ const routes = [
     component: ZutSalgalt,
   },
   {
-    path: "/line",
+    path: "/waypart",
     name: "Үйлчлэх мөр",
-    component: Line,
+    component: Waypart,
   },
   {
     path: "/fnorm",

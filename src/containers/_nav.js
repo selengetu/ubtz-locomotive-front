@@ -64,6 +64,11 @@ export default [
     _children: [
       {
         _tag: "CSidebarNavItem",
+        name: "Үйлчлэх мөр",
+        to: "/waypart",
+      },
+      {
+        _tag: "CSidebarNavItem",
         name: "Ачааны норм",
         to: "/fnorm",
       },
